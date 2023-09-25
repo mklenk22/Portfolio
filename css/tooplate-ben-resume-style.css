@@ -384,6 +384,75 @@ https://www.tooplate.com/view/2120-ben-resume
 
 
   /*---------------------------------------
+     PROJECTS               
+  -----------------------------------------*/
+.project-item {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-item h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Center the project item's text */
+.project-item .project-details {
+  text-align: center;
+}
+
+/* Container for the project items */
+.projects .container {
+  padding: 60px 0;
+}
+
+/* Section title style */
+.projects h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .project-item {
+      padding: 15px;
+  }
+
+  .projects .container {
+      padding: 30px 0;
+  }
+
+  .projects h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+  }
+}
+
+
+  /*---------------------------------------
      TESTIMONIALS               
   -----------------------------------------*/
 
