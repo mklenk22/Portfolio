@@ -154,11 +154,12 @@ https://www.tooplate.com/view/2120-ben-resume
     <div class="projects">
         <div class="container">
             <h3>Project Showcase</h3>
+
             <!-- Project 1 -->
             <div class="project-item">
                 <img src="images/Boeing_Logo.jpg" alt="Boeing Stress Analysis Tool">
-                <div class="project-details">
-                    <h4>Boeing Stress Analysis Tool</h4>
+                <button class="description-button">Open Description</button>
+                <div class="description-popup">
                     <p>This was the first project I worked on during my 8-month co-op at Belcan. My team was
                         assigned with the task of reworking an existing Boeing 777X stress analysis tool. The
                         previous tool took 72 hours to run. Using a Graham scan algorithm, only the critical
@@ -169,6 +170,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
                         The skills my team and I learned from this project are Excel VBA, Creative Problem-Solving,
                         Software Development, Technical Writing and Boeing-Owned Stress Analysis Software.</p>
+                    <button class="close-button">Close</button>
                 </div>
             </div>
 
@@ -559,12 +561,35 @@ https://www.tooplate.com/view/2120-ben-resume
         </div>
       </div>
     </section>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/custom.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(".description-button").click(function (e) {
+            e.stopPropagation(); // Prevent the click event from propagating to the document
+            $(this).siblings(".description-popup").fadeIn();
+        });
+
+        $(".close-button").click(function (e) {
+            e.stopPropagation(); // Prevent the click event from propagating to the document
+            $(this).closest(".description-popup").fadeOut();
+        });
+
+        // Close the popup when clicking anywhere outside of it
+        $(document).on("click", function (event) {
+            if (!$(event.target).closest(".description-popup").length) {
+                $(".description-popup").fadeOut();
+            }
+        });
+    });
+
+    </script>
+
+
 
 </body>
 </html>
