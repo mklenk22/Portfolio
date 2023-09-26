@@ -451,6 +451,20 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 }
 
+/* Add a class to your project images container */
+.project-images-container {
+  text-align: center; /* Center align the contents horizontally */
+}
+
+/* Style your project images as needed */
+.project-images-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: inline-block; /* Ensure images are treated as inline-block elements */
+  margin: 0 auto; /* Center the images horizontally within the container */
+}
+
 
 /*---------------------------------------
  PROJECTS WITH BUTTON               
