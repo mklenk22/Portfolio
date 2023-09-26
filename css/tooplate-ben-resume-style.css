@@ -532,10 +532,27 @@ https://www.tooplate.com/view/2120-ben-resume
 
 
   /*---------------------------------------
-     TESTIMONIALS               
+     Skills               
   -----------------------------------------*/
 
-  .testimonials {
+  /* CSS for maintaining consistent indentation in skills list */
+  .skills-list {
+    padding-left: 20px; /* Adjust the indentation as needed */
+    list-style-type: square; /* You can change the bullet style if desired */
+  }
+
+  /* Prevent text from wrapping */
+  .skills-list li {
+    white-space: nowrap;
+  }
+
+  /* Wrap bolded text to the next line */
+  .skills-list li strong {
+    display: block;
+  }
+  
+  
+  /*.testimonials {
     background: #f9f9f9;
   }
 
@@ -568,7 +585,7 @@ https://www.tooplate.com/view/2120-ben-resume
   .testimonials .owl-theme .owl-dots .owl-dot.active span, 
   .testimonials .owl-theme .owl-dots .owl-dot:hover span {
     background: var(--primary-color);
-  }
+  }*/
 
 
   /*---------------------------------------
