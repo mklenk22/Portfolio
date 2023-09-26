@@ -386,7 +386,7 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      PROJECTS               
   -----------------------------------------*/
-/*.project-item {
+.project-item {
   background-color: #f8f9fa;
   padding: 20px;
   margin-bottom: 30px;
@@ -418,25 +418,25 @@ https://www.tooplate.com/view/2120-ben-resume
 }
 
 /* Center the project item's text */
-/*.project-item .project-details {
+.project-item .project-details {
   text-align: center;
-}*/
+}
 
 /* Container for the project items */
-/*.projects .container {
+.projects .container {
   padding: 60px 0;
-}*/
+}
 
 /* Section title style */
-/*.projects h3 {
+.projects h3 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 40px;
   color: #333;
-}*/
+}
 
 /* Media queries for responsiveness */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
   .project-item {
       padding: 15px;
   }
@@ -449,16 +449,16 @@ https://www.tooplate.com/view/2120-ben-resume
       font-size: 24px;
       margin-bottom: 30px;
   }
-}*/
+}
 
 
 /*---------------------------------------
  PROJECTS WITH BUTTON               
 -----------------------------------------*/
-.project-item {
-  position: relative;
+/*.project-item {
+  position: relative;*/
   /* Your other styles here */
-}
+/*}
 
 .description-popup {
   display: none;
@@ -471,9 +471,9 @@ https://www.tooplate.com/view/2120-ben-resume
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 9999; /* Adjust the z-index to ensure it's above other content */
-  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
-}
+  z-index: 9999;*/ /* Adjust the z-index to ensure it's above other content */
+  /*overflow-y: auto;/* /* Enable vertical scrolling if content exceeds max-height */
+/*}
 
 .description-popup p {
   color: #fff;
@@ -492,7 +492,7 @@ https://www.tooplate.com/view/2120-ben-resume
   font-size: 16px;
   cursor: pointer;
   z-index: 9999; /* Ensure the close button is above the description content */
-}
+/*}
 
 
 
@@ -574,8 +574,40 @@ https://www.tooplate.com/view/2120-ben-resume
   /*---------------------------------------
      CONTACT               
   -----------------------------------------*/
-  
-  .contact-form .form-control {
+  /* Style the "Scroll to Top" button */
+#scroll-to-top-button {
+  background-color: #007bff; /* Change to your desired button color */
+  color: #fff; /* Change to your desired text color */
+  border: none;
+}
+
+#scroll-to-top-button:hover {
+  background-color: #0056b3; /* Change to the hover color you prefer */
+}
+
+/* Add spacing to the footer */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the section takes up at least the full viewport height */
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*.contact-form .form-control {
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(142, 140, 140, 0.35);
@@ -664,7 +696,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .copyright-text {
     font-size: var(--base-font-size);
-  }
+  }*/
 
 
   /*---------------------------------------
